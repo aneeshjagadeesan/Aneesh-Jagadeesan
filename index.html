@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aneesh Jagadeesan — Portfolio</title>
+  <meta name="description" content="Portfolio of Aneesh Jagadeesan">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a href="#top" class="logo" id="logo">AJ</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience" id="nav-exp">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="mono accent">Hi, I'm</p>
+        <h1 id="name"></h1>
+        <h2 id="role"></h2>
+        <p id="intro" class="lead"></p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View my work</a>
+          <a href="#contact" class="btn">Get in touch</a>
+        </div>
+      </div>
+      <div class="avatar" id="avatar"></div>
+    </section>
+
+    <section id="about" class="section">
+      <h3 class="section-title"><span class="mono accent">01.</span> About me</h3>
+      <p id="about-text" class="lead"></p>
+      <ul id="skills" class="chips"></ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h3 class="section-title"><span class="mono accent">02.</span> Projects</h3>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <section id="experience" class="section">
+      <h3 class="section-title"><span class="mono accent">03.</span> Experience</h3>
+      <ol id="timeline" class="timeline"></ol>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h3 class="section-title"><span class="mono accent">04.</span> Contact</h3>
+      <p class="lead">My inbox is always open — whether you have a question, an opportunity, or just want to say hi.</p>
+      <div id="contact-links" class="hero-cta center"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> <span id="footer-name"></span> · Built with HTML &amp; CSS</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
